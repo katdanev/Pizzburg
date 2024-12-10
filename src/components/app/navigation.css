@@ -1,0 +1,68 @@
+/*navigation.css*/
+.container {
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+}
+
+.link {
+    text-decoration: none; /* Заборонити підкреслення */
+    color: inherit; /* Застосувати колір тексту батьківського елемента (за замовчуванням) */
+    width: 50%;
+}
+
+.button {
+    background-color: #CC6C62;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center; /* text in the center of a button */
+    border-style: none;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.font {
+    font-family: 'Jolly Lodger';
+    color: white;
+    font-size: 50pt;
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .font {
+        font-size: 40pt;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .font {
+        font-size: 30pt;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .font {
+        font-size: 25pt;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .font {
+        display: none;
+    }
+}
+
+  
