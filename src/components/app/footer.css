@@ -1,0 +1,45 @@
+/* footer.css*/
+
+.greenFooterBox {
+    background-color: #86AB59;
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.photoContainer {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.textInFooter {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(248, 246, 246);
+    font-family: 'Noto Sans Gujarati', sans-serif;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .textInFooter > span {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .greenFooterBox {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .photoContainer {
+        flex-direction: column;
+    }
+}
